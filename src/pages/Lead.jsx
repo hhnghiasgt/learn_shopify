@@ -23,7 +23,7 @@ export const Lead = () => {
 				</Text>
 				<Card>
 					<Box paddingBlock={500}>
-						<Text	Text variant="headingLg" >Submit a Lead</Text>
+						<Text Text variant="headingLg" >Submit a Lead</Text>
 					</Box>
 					<BlockStack gap={500}>
 						<InlineGrid columns={'3fr 1fr'} >
@@ -103,7 +103,7 @@ export const Lead = () => {
 							<Box padding={300}>
 								<Text tone="subdued">Submit a POS or Plus lead and start earning referral income today.</Text>
 							</Box>
-							<InlineStack gap={200}>
+							<InlineStack gap={200} align="center">
 								<Button>Submit a Plus lead</Button>
 								<Button>Submit a POS lead</Button>
 							</InlineStack>

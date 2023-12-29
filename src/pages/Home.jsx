@@ -1,4 +1,4 @@
-import { BlockStack, Box, Button, Card, Collapsible, Divider, EmptyState, Grid, Icon, InlineGrid, InlineStack, Link, Page, ProgressBar, Text } from '@shopify/polaris'
+import { ActionList, BlockStack, Box, Button, Card, Collapsible, Divider, EmptyState, Grid, Icon, InlineGrid, InlineStack, Link, Page, Popover, ProgressBar, Text } from '@shopify/polaris'
 import React, { useCallback, useState } from 'react'
 import {
     CaretDownMinor, MobileHorizontalDotsMajor, CaretUpMinor, ExternalSmallMinor
@@ -8,6 +8,24 @@ export const Home = () => {
     const [open, setOpen] = useState(true);
 
     const handleToggle = useCallback(() => setOpen((open) => !open), []);
+
+    const [popoverActive, setPopoverActive] = useState(false);
+
+    const togglePopoverActive = useCallback(
+        () => setPopoverActive((popoverActive) => !popoverActive),
+        [],
+    );
+
+    const activator = (
+        <Box paddingInlineEnd={300}>
+            <Button
+                onClick={togglePopoverActive}
+                variant='monochromePlain'
+                size='large'
+                pressed icon={MobileHorizontalDotsMajor} >
+            </Button>
+        </Box>
+    );
     return (
         <Page>
             <Box background='bg-fill' borderRadius='300'>
@@ -17,10 +35,17 @@ export const Home = () => {
                             <Text variant='headingMd'>Get started</Text>
                         </Box>
                         <Box className="icon_tick" style={{ display: 'flex' }}>
-                            <Icon
-                                source={MobileHorizontalDotsMajor}
-                                tone="base"
-                            />
+                            <Popover
+                                active={popoverActive}
+                                activator={activator}
+                                autofocusTarget="first-node"
+                                onClose={togglePopoverActive}
+                            >
+                                <ActionList
+                                    actionRole="menuitem"
+                                    items={[{ content: 'Import' }, { content: 'Export' }]}
+                                />
+                            </Popover>
                             <Button
                                 onClick={handleToggle}
                                 ariaExpanded={open}

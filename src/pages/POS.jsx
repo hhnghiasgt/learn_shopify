@@ -355,10 +355,8 @@ const POS = () => {
                     <InlineGrid gap="400" columns={2}>
                         <Box>
                             <BlockStack gap={400}>
-                                <Text>
-                                    <Text variant="headingMd">
-                                        How to sell Shopify POS
-                                    </Text>
+                                <Text variant="headingMd">
+                                    How to sell Shopify POS
                                 </Text>
                                 <Text>
                                     The POS system with everything you need to sell in person,
@@ -368,10 +366,8 @@ const POS = () => {
                             </BlockStack>
                             <Box paddingBlock={300}>
                                 <BlockStack gap={400}>
-                                    <Text>
-                                        <Text variant="headingMd">
-                                            How to sell Shopify POS
-                                        </Text>
+                                    <Text variant="headingMd">
+                                        How to sell Shopify POS
                                     </Text>
                                     <Text>
                                         The POS system with everything you need to sell in person,
@@ -397,37 +393,31 @@ const POS = () => {
                         <InlineStack align="center">
                             <Box style={{ width: "80%", margin: "50px 0px" }}>
                                 <Card>
-                                    <Box paddingBlock={"1000"}>
-                                        <BlockStack align="center">
-                                            <Text alignment="center" variant="headingMd">
-                                                Get $500 USD to $3,000 USD per POS{" "}
-                                                <Badge tone="attention">PRO</Badge> referral
-                                            </Text>
-                                            <Box paddingBlock={500}>
-                                                <Text alignment="center">
-                                                    We will even pitch POS Pro for you Just ask for sales
-                                                    assistance in the lead form{" "}
-                                                </Text>
-                                            </Box>
-                                            <InlineStack align="center">
-                                                <Button variant="primary" tone="success">
-                                                    Submit POS Pro referral
-                                                </Button>
-                                            </InlineStack>
-                                            <Box
-                                                style={{
-                                                    paddingTop: "15px",
-                                                    display: "flex",
-                                                    justifyContent: "center",
-                                                }}
-                                            >
-                                                <Link monochrome href="">
-                                                    Promotion term here.{" "}
-                                                </Link>{" "}
-                                                <Text> Offer available in select countries</Text>
-                                            </Box>
-                                        </BlockStack>
-                                    </Box>
+                                    <BlockStack>
+                                        <Text alignment="center" variant="headingMd">
+                                            Get $500 USD to $3,000 USD per POS{" "}
+                                            <Badge tone="attention">PRO</Badge> referral
+                                        </Text>
+                                        <Box paddingBlock={500}>
+                                            We will even pitch POS Pro for you Just ask for sales
+                                            assistance in the lead form{" "}
+                                        </Box>
+                                        <Button variant="primary" tone="success">
+                                            Submit POS Pro referral
+                                        </Button>
+                                        <Box
+                                            style={{
+                                                paddingTop: "15px",
+                                                display: "flex",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <Link monochrome href="">
+                                                Promotion term here.{" "}
+                                            </Link>{" "}
+                                            <Text> Offer available in select countries</Text>
+                                        </Box>
+                                    </BlockStack>
                                 </Card>
                             </Box>
                         </InlineStack>

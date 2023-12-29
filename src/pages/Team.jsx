@@ -28,7 +28,7 @@ export const Team = () => {
             accessibilityLabel: 'All customers',
             panelID: 'all-customers-content-1',
             component:
-                <Box >
+                <Box>
                     <Box paddingBlock={500} paddingInline={300}>
                         <InlineStack align="space-between" >
                             <InlineStack gap={300} >
@@ -119,7 +119,7 @@ export const Team = () => {
                 </Box>
                 <Box borderRadius="150" background="bg-fill" shadow="200">
                     <Tabs tabs={tabs} selected={selected} onSelect={handleTabChange}>
-                        <Box borderBlockStartWidth="0165" borderColor="border" paddingBlock={500} paddingInline={300}> {tabs[selected].component} </Box>
+                        <Box borderBlockStartWidth="0165" borderColor="border" paddingInline={300}> {tabs[selected].component} </Box>
                     </Tabs>
                 </Box>
             </InlineGrid>

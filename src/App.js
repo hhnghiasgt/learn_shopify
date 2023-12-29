@@ -1,11 +1,9 @@
-import { Button } from '@shopify/polaris';
-import POS from './pages/POS';  
+import './App.css'
+import MainLayout from './pages/layout';
 
 function App() {
   return (
-    <div className="App">
-      <POS />
-    </div>
+    <MainLayout></MainLayout>
   );
 }
 
